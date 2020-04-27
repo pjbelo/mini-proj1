@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+    <html lang="pt" ng-app="myApp">
+    <head>
+      <meta charset="utf-8">
+      <!-- carregar bootstrap e fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
+      <!-- carregar angularJS via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+      <!-- carregar o código da aplicação -->
+      <script src="script.js"></script>
+
+      <title>AngularJS SPA</title>
+    </head>
+
+
+    <body ng-app="myApp">
+
+        <!-- definir o header e navbar -->
+        <header>
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Paulo Jorge Belo</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-user"></i> Quem sou eu? </a></li>
+                    <li><a href="#sobre"><i class="fa fa-shield"></i> O que faço? </a></li>
+                    <li><a href="#hobbies"><i class="fa fa-photo"></i> Hobbies </a></li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+
+    <!-- AngularJS View -->
+    <div id="main">
+        <div ng-view></div>
+    </div>
+
+    <!-- Rodapé com redes sociais -->
+    <hr/>
+    <footer class="text-center center-block">
+        <a target="_blank" href="https://www.facebook.com/paulo.j.belo"><i class="fa fa-facebook fa-2x pr-4"></i></a>
+        <a target="_blank" href="https://twitter.com/paulobelo"><i class="fa fa-twitter fa-2x"></i></a>
+        <a target="_blank" href="https://medium.com/@pjbelo"><i class="fa fa-medium fa-2x"></i></a>        
+        <a target="_blank" href="https://github.com/pjbelo"><i class="fa fa-github fa-2x"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/paulobelo/"><i class="fa fa-linkedin fa-2x"></i></a>
+    </footer>
+    <hr/>
+
+</body>
+</html>
+
